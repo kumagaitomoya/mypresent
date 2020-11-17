@@ -1,0 +1,14 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+          name: 名前
+          prefecture_id: 都道府県を
+          postal_code: 郵便番号
+          attendance_id: ご出席について
+          municipality: 市区町村
+          address: 番地
+
+      #  municipality: 市区町村
+      #  address: 番地
+    
