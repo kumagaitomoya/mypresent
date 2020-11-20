@@ -31,6 +31,12 @@
         <div class='item-img-content'>
           <%= image_tag product.image, class:"item-img"%>
 
+          <%# <div class="messages">
+    <% message.images.each do |image| %>
+      <%# <%= image_tag image, class:'images' %> %>
+    <%# <% end %> %>
+  <%# </div> %> %>
+
           <%# 商品が売れていればsold outを表示しましょう %>
            <% if product.buyer.present?%>  
            
