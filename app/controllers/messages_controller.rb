@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
 before_action :authenticate_user!, except: [:index]
 
   def index
-    @messages = Message.all
+    @messages = Message.order(created_at: :desc)
   end
 
   def new
