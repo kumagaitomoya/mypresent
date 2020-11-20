@@ -8,7 +8,7 @@ ja:
           attendance_id: ご出席について
           municipality: 市区町村
           address: 番地
-
-      #  municipality: 市区町村
-      #  address: 番地
-    
+     message:
+          photo_name: フォト名
+          images: フォト
+          photo_message: フォトメッセージ

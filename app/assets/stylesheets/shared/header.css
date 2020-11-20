@@ -89,6 +89,7 @@
 .logout {
   text-decoration: none;
   color: #333333;
+  margin: auto 5px;
 }
 
 .login {
