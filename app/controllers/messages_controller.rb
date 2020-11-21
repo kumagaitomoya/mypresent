@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-before_action :authenticate_user!, except: [:index]
+before_action :authenticate_user!, except: [:index,:show]
 
   def index
     @messages = Message.order(created_at: :desc)
@@ -16,6 +16,10 @@ before_action :authenticate_user!, except: [:index]
     else
       render :new
     end
+  end
+
+  def show
+    @message = Message.find(params[:id])
   end
 
 
