@@ -22,6 +22,29 @@ before_action :authenticate_user!, except: [:index,:show]
     @message = Message.find(params[:id])
   end
 
+  def edit
+    @message = Message.find(params[:id])
+    if @message.user_id == current_user.id
+      render :edit
+    else
+      redirect_to root_path
+    end
+  end
+
+  def update
+    @message = Message.find(params[:id])
+    if @message.update(message_params)
+      redirect_to message_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @message = Message.find(params[:id])
+    @message.destroy if current_user.id == @message.user.id
+    redirect_to root_path
+  end
 
 private
 
