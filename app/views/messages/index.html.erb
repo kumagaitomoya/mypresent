@@ -26,11 +26,11 @@
     <ul class='item-lists'>
      <% @messages.each do |message| %>
       <%# <li class='list'> %>
-        <%= link_to  messages_path(message.id), method: :get do %> 
+        <%= link_to  message_path(message.id), method: :get do %> 
          <div class='item-img-content'>
-           <% message.images.each do |image| %>
-              <%= image_tag image, class:"images" %> 
-        <% end %>
+           <%# <<% message.images.each do |image| %>    
+              <%= image_tag message.images[0], class:"images" %> 
+             <%# <% end %>  
         
            <% end %> 
            </div> 
@@ -59,6 +59,7 @@
     </div>
   </div>
   <%# /画面中央の「会員数日本一位」帯部分 %>
+
 
 
 
