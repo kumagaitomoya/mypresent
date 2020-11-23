@@ -20,6 +20,8 @@ before_action :authenticate_user!, except: [:index,:show]
 
   def show
     @message = Message.find(params[:id])
+    @comment = Comment.new
+    @comments = @message.comments
   end
 
   def edit
@@ -49,7 +51,7 @@ before_action :authenticate_user!, except: [:index,:show]
 private
 
   def message_params
-    params.require(:message).permit(:photo_name, :photo_message,images: []).merge(user_id: current_user.id)
+    params.require(:message).permit(:text,:photo_name, :photo_message,images: []).merge(user_id: current_user.id)
   end
 
 end
