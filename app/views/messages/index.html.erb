@@ -1,62 +1,52 @@
 
 <div class='main'>
   <%# 画面上部の「人生を変えるフリマアプリ」帯部分 %>
-  <div class='title-contents'>
-  <%= render "shared/header" %> 
+  <%= render "shared/header" %>
+  <div class='title-contents'> 
     <h2 class='service-title'>
-      人生を変えるフリマアプリ
+      皆様へ
     </h2>
-    <p class='service-explain'>
-      FURIMAはだれでもかんたんに出品・購入できる
-      いいいいい
-    </p>
-    <p class='service-explain'>
-      フリマアプリです
-    </p>
+    <P class='service-explain'>
+     <P class='service-explain'>私たち、田中英樹と山田由美は１１月２２日に籍を入れ、夫婦となりました。</P>
+    <P class='service-explain'> そして、日頃の感謝の気持ちをお伝えしたくこのような場を設けさせていただきました。</P>
+     <P class='service-explain'>アプリを通して、今日までの皆様との思い出や感謝を共有できればと思っております。</P>
+      <P class='service-explain'>田中英樹　田中由美</P>
+      </p>
   </div>
   <%# /画面上部の「人生を変えるフリマアプリ」帯部分  %>
 
- 
-  <div class='item-contents'>
-    <h2 class='title'>ピックアップカテゴリー</h2>
-    <%= link_to '新規投稿商品', "#", class: "subtitle" %>
-    <ul class='item-lists'>
-     <% @messages.each do |message| %>
-      <%# <li class='list'> %>
+  <div class='item-contents'>　
+    <ul class='item-lists'>  
+      <% @messages.each do |message| %>
+      <li class='list'> 
         <%= link_to  message_path(message.id), method: :get do %> 
-         <div class='item-img-content'>
-           <%# <<% message.images.each do |image| %>    
-              <%= image_tag message.images[0], class:"images" %> 
-             <%# <% end %>  
-        
-           <% end %> 
-           </div> 
-    <% end %>
-       <%# </li> %>
-   </div>
-
-
-  <%# 画面中央の「会員数日本一位」帯部分 %>
-  <div class='ad-contents'>
-    <h2 class='ad-title'>
-      会員数日本一位
-    </h2>
-    <p class='ad-explain'>
-      FURIMAは、フリマアプリで最も人気。
-    </p>
-    <p class='ad-explain'>
-      出品・購入回数も業界最多です！
-    </p>
-    <p class='ad-explain'>
-      ほしかったあの商品に出会えるかもしれません。
-    </p>
-    <div class='store-btn'>
-      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
-      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+         <div class='item-img-content'> 
+             <%= image_tag message.images[0], class:"images" %>  
+            <% end %> 
+          </div> 
+   　  <% end %>
     </div>
-  </div>
-  <div id="map"></div>
-  <%# /画面中央の「会員数日本一位」帯部分 %>
+       <%# </li> %>
+   
+<section id="location">
+            <div class="wrapper">
+                <div class="location-info">
+                    <h3 class="sub-title">アルカンシエル青山</h3>
+                    <p>
+                        住所： 東京都渋谷区<br>
+                        南町 1-22-1<br>
+                        電話： 03-1111-1111<br>
+                        受付時間： 10:00〜<br>
+                        集合場所：ホール１階<br>
+                    </p>
+                </div><!-- /.location-info -->
+                <div class="location-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51874.282592543874!2d139.71594683290357!3d35.648856614752575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea4d25e05640b557!2z44Ki44Or44Kr44Oz44K344Ko44Or5Y2X6Z2S5bGx!5e0!3m2!1sja!2sjp!4v1606391591852!5m2!1sja!2sjp" width="600" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div><!-- /.location-map -->
+            </div><!-- /.wrapper -->
+        </section><!-- /#location -->
+
+
 
 
 

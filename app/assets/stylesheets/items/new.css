@@ -1,16 +1,14 @@
 /* border-bottom: 1px solid #eee; */
 
 
-
 .items-sell-contents {
-   background-color: #f5f5f5;
+  background-color: #f4f4f4; 
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
   font-size: 14px;
   display: flex;
   align-items: center;
   flex-direction: column;
   min-width: 500px;
-  
 }
 
 .items-sell-header {
@@ -19,8 +17,9 @@
 }
 
 .items-sell-main {
- background-color: #FFF; 
- 
+background-color: #FFF;
+
+
   width: 70vw;
   min-width: 450px;
   padding: 10vh 15vw;
@@ -230,3 +229,5 @@
 .inc {
   font-size: 13px;
 }
+
+
