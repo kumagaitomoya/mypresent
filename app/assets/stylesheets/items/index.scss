@@ -4,13 +4,12 @@ a {
 
 .main {
   background: #f8f8f8;
-
 }
 
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
 .title-contents {
   max-width: 100vw;
-  background-image: image-url('kuma3.jpg');
+  background-image: image-url("kuma3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -20,7 +19,7 @@ a {
   justify-content: center;
   padding: 5vh 20vw;
   color: #fff;
-  text-shadow: 2px 3px 8px rgba(0,0,0,0.8);
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
 .service-title {
@@ -55,7 +54,7 @@ a {
   padding: 5vh 15vw;
 }
 
-.select-reason-contents>.title {
+.select-reason-contents > .title {
   text-align: center;
   font-size: 3.5vh;
   font-weight: bold;
@@ -63,8 +62,8 @@ a {
   position: relative;
 }
 
-.select-reason-contents>.title::after {
-  content: '';
+.select-reason-contents > .title::after {
+  content: "";
   width: 70px;
   height: 4px;
   background-color: #3ccace;
@@ -80,7 +79,7 @@ a {
   flex-wrap: wrap;
 }
 
-.reason-lists>.list {
+.reason-lists > .list {
   width: 33vh;
   display: flex;
   flex-direction: column;
@@ -123,11 +122,10 @@ a {
 
 /* //FURIMAが選ばれる3つの理由部分 */
 
-
 /* 画面中央の「会員数日本一位」帯部分*/
 .ad-contents {
   width: 100vw;
-  background-image: image-url('furima-header02.png');
+  background-image: image-url("furima-header02.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -171,7 +169,7 @@ a {
   padding: 5vh 15vw;
 }
 
-.feature-contents>.title {
+.feature-contents > .title {
   text-align: center;
   font-size: 3.5vh;
   font-weight: bold;
@@ -179,8 +177,8 @@ a {
   position: relative;
 }
 
-.feature-contents>.title::after {
-  content: '';
+.feature-contents > .title::after {
+  content: "";
   width: 70px;
   height: 4px;
   background-color: #3ccace;
@@ -196,7 +194,7 @@ a {
   flex-wrap: wrap;
 }
 
-.feature-lists>.list {
+.feature-lists > .list {
   width: 33vh;
   display: flex;
   flex-direction: column;
@@ -219,7 +217,7 @@ a {
 /* 商品一覧 */
 
 .item-contents {
-  background-color: #FFF;
+  background-color: #fff;
   display: grid;
   gap: 26px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -227,13 +225,13 @@ a {
   margin-bottom: 10px;
 }
 
-.item-contents>.title {
+.item-contents > .title {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
 }
 
-.item-contents>.subtitle {
+.item-contents > .subtitle {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
@@ -247,18 +245,17 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
- }
-
-.item-lists>.list {
-  width: 37vh;
-  padding: 1vw;
-  background-color: #FFF;
 }
 
+.item-lists > .list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #fff;
+}
 
 .item-img-content {
- position: relative;
- }
+  position: relative;
+}
 
 .item-img {
   width: 33vh;
@@ -274,15 +271,14 @@ a {
   transform: skewY(-10deg);
 }
 
-.sold-out>span {
-  color: #FFF;
+.sold-out > span {
+  color: #fff;
   font-size: 45px;
   font: bold;
 }
 
-
 .item-info {
-  background-color: #FFF;
+  background-color: #fff;
   color: black;
   padding: 1vw;
 }
@@ -296,7 +292,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
 
 .star-btn {
   display: flex;
@@ -313,10 +308,12 @@ a {
   font-size: 2vh;
 }
 
-.images{
- height: 200px;
- width:  200px;
-
+.images {
+  height: 200px;
+  width: 200px;
+  border: 8px groove;
+  border-color: #660033;
+  margin: 5px;
 }
 
 .wrapper {
@@ -347,7 +344,5 @@ a {
 .location-map {
   width: 74%;
 }
-
-
 
 /* //商品一覧 */

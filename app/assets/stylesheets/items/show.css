@@ -10,7 +10,10 @@
 }
 
 .item-box {
-  background-color: #FFF;
+  background: linear-gradient(-135deg, #ffe1d0, #fdaf6e);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   width: 70vw;
   min-width: 1200px;
   padding: 10vh 15vw;
@@ -19,7 +22,7 @@
   align-items: center;
 }
 
-.item-box>.name {
+.item-box > .name {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
@@ -29,7 +32,7 @@
   height: 50vh;
   width: 60vw;
   min-height: 500px;
-  background-color: rgb(205, 202, 202);
+  background-color: #660033;
   object-fit: contain;
 }
 
@@ -40,22 +43,21 @@
   flex-direction: column;
 }
 
-.item-price-box>.item-price {
+.item-price-box > .item-price {
   font-size: 4vh;
   font-weight: bold;
 }
 
-.item-price-box>.item-postage {
+.item-price-box > .item-postage {
   font-size: 16px;
 }
-
 
 .item-red-btn {
   text-align: center;
   background-color: #ea352d;
   font-size: 24px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   margin: 20px 0px;
   padding: 2vh 10vw;
 }
@@ -85,8 +87,8 @@
 
 .detail-item {
   width: 20%;
-  background-color: #eee;
-  border: 1px solid #dedede;
+  background-color: #ffe1d0;
+  border: 3px solid #660033;
   font-size: 14px;
   text-align: center;
 }
@@ -94,7 +96,7 @@
 .detail-value {
   width: 80%;
   padding: 20px;
-  border: 1px solid #dedede;
+  border: 2px solid #660033;
   font-size: 14px;
 }
 
@@ -137,7 +139,6 @@
   margin-right: 5px;
 }
 
-
 /* /商品の概要 */
 
 .comment-box {
@@ -164,8 +165,8 @@
 
 .comment-btn {
   line-height: 48px;
-  background-color: #3CCACE;
-  border: 1px solid #3CCACE;
+  background-color: #3ccace;
+  border: 1px solid #3ccace;
   color: #fff;
   width: 50%;
   min-width: 150px;
@@ -187,19 +188,18 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
 }
 
 .change-item-btn {
   font-size: 30px;
   text-decoration: none;
-  color: #3CCACE;
+  color: #3ccace;
 }
 
 .another-item {
   display: block;
   margin: 30px 0px 8px;
-  color: #3CCACE;
+  color: #3ccace;
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;

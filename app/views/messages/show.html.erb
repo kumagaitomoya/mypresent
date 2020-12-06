@@ -2,12 +2,12 @@
 
 <%# 商品の概要 %>
 <div class="item-show">
-  <div class="item-box">
+   <div class="item-box">
     <h2 class="name">
       <%=  @message.photo_name%>
     </h2>
     <div class='item-img-content'>
-　　
+
       <% @message.images.each do |image| %>
       <%= image_tag image, class:'images' %>
       <% end %>
@@ -82,5 +82,7 @@
     </a>
   </div>
 </div>
+</div>
+
 
 <%= render "shared/footer" %>
