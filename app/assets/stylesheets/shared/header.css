@@ -4,9 +4,10 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 0vh 5vw;
+  padding: 1vh 5vw;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(-50deg, #ffe1d0, #fdaf6e);
 }
 
 .nav {
@@ -25,14 +26,12 @@
   margin-bottom: 10px;
 }
 
-
 .user-nickname {
   text-decoration: none;
   margin-right: 3vw;
   color: #333333;
   font-weight: bold;
 }
-
 
 .logout {
   text-decoration: none;

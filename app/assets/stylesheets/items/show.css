@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5vh 0;
+  overflow: hidden;
 }
 
 .item-box {
@@ -14,9 +14,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  width: 70vw;
-  min-width: 1200px;
-  padding: 10vh 15vw;
+  width: 100vw;
+  min-height: 100%;
+  min-width: 1000px;
+  padding: 10vh 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,15 +144,25 @@
 
 .comment-box {
   width: 40vw;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 97%,
+    #ddd 20%
+  );
+  background-size: 100% 2em;
+  line-height: 2;
   margin: 5vh 0;
+
   text-align: center;
 }
 
 .comment-text {
+  background-color: rgba(255, 255, 255, 0.7);
   width: 100%;
   height: 100px;
-  padding: 10px;
+  padding: 15px;
   border: solid 2px #dedede;
   resize: none;
 }
@@ -165,13 +176,14 @@
 
 .comment-btn {
   line-height: 48px;
-  background-color: #3ccace;
+  background-color: #ffb340;
   border: 1px solid #3ccace;
   color: #fff;
   width: 50%;
   min-width: 150px;
   font-size: 18px;
   border-radius: 100px;
+  margin-top: 3vh;
   margin-bottom: 2vh;
 }
 
