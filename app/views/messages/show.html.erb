@@ -6,25 +6,25 @@
     <h2 class="name">
       <%=  @message.photo_name%>
     </h2>
-    <div class='item-img-content'>
+     <div class='item-img-content'>
 
       <% @message.images.each do |image| %>
       <%= image_tag image, class:'images' %>
       <% end %>
      
    
-   </div>
+    </div>
      <% if user_signed_in? && current_user.id == @message.user_id %>
-       <%= link_to '商品の編集',  edit_message_path, method: :get, class: "item-red-btn" %> 
+       <%= link_to '編集',  edit_message_path, method: :get, class: "item-red-btn" %> 
         <p class='or-text'>or</p> 
-        <<%= link_to '削除',message_path, method: :delete, class:'item-destroy' %>  
+        <%= link_to '削除',message_path, method: :delete, class:'item-destroy' %>  
       <%end %> 
     
 
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-item">出品者</th>
+          <th class="detail-item">贈り主</th>
           <td class="detail-value"><%= @message.user.name %></td>
         </tr>
         <tr>
