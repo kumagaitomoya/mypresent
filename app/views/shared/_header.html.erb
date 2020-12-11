@@ -6,7 +6,7 @@
       <%# deviseを導入できたら、ログインの有無で表示が変わるように分岐しましょう%>
        <% if user_signed_in? %>
       <li><%= link_to current_user.name, root_path, class: "user-nickname"%> </li> 
-       <li><%= link_to "動画", "https://youtu.be/Dg8doNVtnIk/" %> </li> 
+       <%# <li><%= link_to "動画", "https://youtu.be/Dg8doNVtnIk/" %> </li>  
        <li><%= link_to '退席する', destroy_user_session_path, method: :delete, class: "logout"%> </li> 
         <li><%= link_to 'メッセージ', new_message_path, class: "logout"%> </li> 
       <% else %>
