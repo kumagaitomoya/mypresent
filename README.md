@@ -1,6 +1,6 @@
 # mypresent
 
-https://gyazo.com/793fa8552136c313ce95fe8e0d6e1440
+https://i.gyazo.com/793fa8552136c313ce95fe8e0d6e1440.gif
 
 # アプリケーション名
 
