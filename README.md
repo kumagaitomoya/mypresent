@@ -1,6 +1,6 @@
 # mypresent
 
-https://i.gyazo.com/793fa8552136c313ce95fe8e0d6e1440.gif
+![トップ画面修正](https://user-images.githubusercontent.com/72239344/101884090-8595dd80-3bdb-11eb-8b70-593d433c1bb4.gif)
 
 # アプリケーション名
 
