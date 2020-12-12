@@ -35,24 +35,23 @@
     </table>
 
 <div class="comment-box">
-   <% if user_signed_in? %>
   <div id='comments'>
  <% @comments.each do |comment| %>  
    <div>
     <%= comment.text %>
    </div>
    <% end %>  
-   <% end %> 
   </div>
    <%= form_with model: [@message,@comment] do |f|%>
-
     <form>
-        <%= f.text_field :text, class:"comment-text",placeholder:"追加メッセージはここから！"%>
+        <%= f.text_field :text, class:"comment-text",placeholder:"追加メッセージはログイン後からでお願いします"%>
+     <% if user_signed_in? %>
       <button type="submit" class="comment-btn">
         <%= image_tag "comment.png" ,class:"comment-flag-icon" ,width:"20",height:"25"%>
         <span>追加メッセージ<span>
       </button>
        <% end %>
+        <% end %>
     </form>
 </div>
   </div>
