@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-before_action :authenticate_user!, except: [:index,:show]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @messages = Message.order(created_at: :desc)
@@ -48,10 +48,9 @@ before_action :authenticate_user!, except: [:index,:show]
     redirect_to root_path
   end
 
-private
+  private
 
   def message_params
-    params.require(:message).permit(:text,:photo_name, :photo_message,images: []).merge(user_id: current_user.id)
+    params.require(:message).permit(:text, :photo_name, :photo_message, images: []).merge(user_id: current_user.id)
   end
-
 end

@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-   has_many :messages
-   has_many :comments
+  has_many :messages
+  has_many :comments
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :prefecture
@@ -32,6 +32,4 @@ class User < ApplicationRecord
     validates :address
     # 番地
   end
-
-
 end
