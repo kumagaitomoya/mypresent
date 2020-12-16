@@ -28,7 +28,6 @@ basic 認証:
 - JavaScript
 - HTML/CSS
 - AWS(S3,EC2)
-- Docker
 - SQL
 - Rspec
 - Capistrano
